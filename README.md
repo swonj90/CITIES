@@ -10,19 +10,19 @@ Sequential recommendation techniques provide users with product recommendations 
 1. Download 'data' and 'pretrained_model' from the following link: https://drive.google.com/drive/folders/1wjsj70kYfOd166zbD1s4OX6JmZ2ipa3j?usp=sharing
 
 2. Unzip the downloaded folders to the cloned code directory.
-cities.py
-...
-utils.py
-data/yelp.csv
-pretrained_model/yelp/bert.pth
+cities.py 
+... 
+utils.py 
+data/yelp.csv 
+pretrained_model/yelp/bert.pth 
 
 
 ### How to run the code
 ```python main.py --dataset yelp --pretrained_model bert --embedding_key bert.embedding.token.weight```
 1. If you'd like to use a different dataset, save your dataset to the 'data' directory and match the format to yelp.csv. 
-   Then, change the --dataset argument to the name of your dataset.
-2. If you'd like to use a different pretrained item embedding, pretrain your model and save the model to the 'pretrained_model' directory. (Note that you have to write the model with the '.pth' extension.)
-   Then, change the --pretrained_model argument to the name of your model and --embedding_key argument to the name of item embedding's name.
+   Then, change the --dataset argument to the name of your dataset. 
+2. If you'd like to use a different pretrained item embedding, pretrain your model and save the model to the 'pretrained_model' directory. (Note that you have to write the model with the '.pth' extension.) 
+   Then, change the --pretrained_model argument to the name of your model and --embedding_key argument to the name of item embedding's name. 
    
    
 ## Citation
